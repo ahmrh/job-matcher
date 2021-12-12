@@ -6,29 +6,125 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="./src/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+      html{
+        margin: 0;
+      }
+      body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        padding
+      }
+
+      .container{
+        display: flex;
+        align-items: center;
+        position:relative;
+        height : 40vh;
+        margin : 0;
+        padding: 0;
+      }
+
+      .judul{
+        text-align : left;
+        width: .conta;
+      }
+
+      .judul h1, .judul p{
+        margin : 0;
+      }
+
+      @media screen and (max-height: 600px) {
+        /* styles */
+        html {
+          /*border: 10px solid rgba(91, 91, 91, 1);*/
+        }
+      
+        .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+          height : auto;
+          
+        }
+        .box, .judul{
+          margin-top: 25px;
+          justify-self: center;
+          text-align: center;
+
+          position: relative;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+      
+
+    </style>
   </head>
   <body>
     <!-- Ketik code Anda dibawah -->
-    <header">
-      <div class="judul">
+    <div class="container" 
+    style=
+    "display: flex; 
+    justify-content: center; 
+    align-items:start;
+
+    width: 100vh;
+    height: auto;
+    background-color:transparent;
+
+    "
+    >
+      <div class="judul"
+      style=
+      "
+      margin-top : 25px;
+      display: flex;
+      flex-direction: column;
+      width: 50vh;"> 
         <h1>Job Matcher</h1>
         <p>Helps You Connect</p>
       </div>
-    </header>
-      <div class="container">
+    
+        
+      <div class="box"
+      style=
+      "display: flex;
+      justify-content:center;
+      background-color: #314455;
+      padding: 4vh;
+      border-radius: 10px;
+      font-family: Roboto;
+      ">
           <form action="/action_page.php">
-            <label for="name">E-Mail/Username</label>
-            <input type="text" class="textbox" id="name" name="email"><br>
-            <label for="password">Password</label>
-            <input type="password" class="textbox" id="password" name="password"><br><br>
+
+            <div class="row">
+              <label for="name" style="" >E-Mail/Username</label>
+              <input type="text" class="textbox" id="name" name="email" placeholder="e-mail/username"><br>
+            </div>
+            
+            <div class="row" style="margin-top:1vh;">
+              <label for="password" style="">Password</label><br>
+              <input type="text" class="textbox" id="password" name="password" placeholder="password"><br><br>
+            </div>
+
             <a href="./home.html">
               <button type="button" class="signinbutton">Sign In</button>
             </a>
-            <p>Dont have an account? Sign Up <a href="./register.html">here</a></p>
+            <p>Don't have an account? <br> Sign up <a href="./register.html">here</a></p>
             <p>Job Matcher 2021</p>
           </form>
       </div>
+          
+    </div>
     <footer><p>© Job Matcher Co. 2021</P></footer>
   </body>
+
+  
 </html>
 
