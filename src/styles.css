@@ -1,0 +1,306 @@
+.bg-main {
+  background-color: rgba(208, 208, 208, 1);
+}
+
+html {
+  background-color: rgba(208, 208, 208, 1);
+  margin-top: 15px;
+  /*background: url("https://wallpaperaccess.com/full/340541.jpg");*/
+  /* background: url("/src/bg.jpg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* position: fixed; */
+  /* background-position: center; */
+}
+
+@media screen and (min-width: 800px) {
+  /* styles */
+
+  body {
+    font-family: "Avenir next";
+  }
+
+  /* Ketik code Anda dibawah */
+
+  header {
+    border-radius: 5px;
+    height: 90px;
+    margin-top: 0;
+    background-color: #314455;
+    width: 100%;
+  }
+
+  .tes {
+    background-color: #314455;
+    width: 100%;
+    border: 2px solid red;
+  }
+
+  .nav {
+    float: left;
+    padding: 33px 20px;
+    /*background-color: #314455;
+    width: 100%;
+    border-radius: 5px;*/
+  }
+
+  .judul {
+    /*float: left;*/
+    /*margin-top: 150px;*/
+    text-align: center;
+    color: #314455;
+    font-size: 25px;
+  }
+  .signinbutton {
+    background-color: #edc787;
+    color: #314455;
+    width: 82%;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  .signinbutton:hover {
+    background-color: #a1a1a1;
+  }
+  .textbox {
+    width: 80%;
+  }
+  .container {
+    /*border: 10px solid rgba(91, 91, 91, 1);*/
+    background-color: #314455;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    color: #edc787;
+    border-radius: 5px;
+  }
+  .container a {
+    text-decoration: none;
+    color: rgba(208, 208, 208, 1);
+  }
+  .container a:hover {
+    color: rgba(91, 91, 91, 1);
+  }
+
+  .homebutton a {
+    float: left;
+    font-size: 36px;
+    color: #edc787;
+    padding: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .homebutton a:hover {
+    color: #a1a1a1;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    float: right;
+    /*margin-top: 23px;*/
+    background-color: #314455;
+    border-radius: 5px;
+  }
+  li a {
+    display: block;
+    color: #edc787;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    color: #a1a1a1;
+    cursor: pointer;
+  }
+  footer {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    color: rgba(91, 91, 91, 1);
+  }
+  .content {
+    /* margin-left: 40px; */
+    /*border: 2px solid red;
+    margin-top: 20px;*/
+    margin: 20px auto;
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+    /* overflow-y: auto; */
+    text-align: left;
+    font-size: 20px;
+    color: #edc787;
+    background-color: #314455;
+    padding: 20px;
+  }
+
+  /*switch on off di page settings*/
+  .switch {
+    float: right;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    /* display: inline-block; */
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(208, 208, 208, 1);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  input:checked + .slider {
+    background-color: #edc787;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /*kotak buat seluruh job di page home*/
+  .chat-content,
+  .homecontent {
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 80%;
+    /*border: 10px solid white;*/
+    text-align: left;
+    overflow-y: auto;
+    background-color: #314455;
+    font-size: 16px;
+  }
+
+  /*job title di page home*/
+  .jobtitle {
+    margin-left: 10px;
+    width: 50%;
+    color: #edc787;
+  }
+  /*jobdesc di page home*/
+  .jobdesc {
+    margin-top: 0;
+    margin-left: 25px;
+    width: 50%;
+    color: #edc787;
+  }
+  /*kotak per job di page home*/
+  .wrapper {
+    border: 3px solid #edc787;
+  }
+  /* tombol accept or decline*/
+  .accept {
+    float: right;
+    margin-top: 90px;
+    width: 10%;
+    padding: 5px;
+    color: #edc787;
+    font-size: 20px;
+  }
+  /*efek hover tombol accept decline*/
+  .accept:hover {
+    color: #bbbbbb;
+    cursor: pointer;
+  }
+
+  .pagetitle {
+    float: left;
+    color: #314455;
+    margin-left: 30px;
+    /*padding: 10px;*/
+    width: 100%;
+  }
+
+  .button,
+  .button a {
+    border: none;
+    color: #314455;
+    text-decoration: none;
+    background-color: #edc787;
+    padding: 5px;
+    margin: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #a1a1a1;
+  }
+
+  .notification-text,
+  chat-text {
+    margin-left: 20px;
+    color: #edc787;
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .notification-image {
+    float: right;
+    margin-right: 20px;
+    margin-top: 6px;
+  }
+
+  .chat-profil {
+    float: left;
+    margin: 6px 3px;
+  }
+
+  .tab-active {
+    background-color: #edc787;
+    border-radius: 5px;
+    color: #314455;
+  }
+  .sfooter {
+    text-align: left;
+    padding: 5px;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  /* styles */
+  .container {
+    /*border: 10px solid rgba(91, 91, 91, 1);*/
+    background-color: #314455;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: auto;
+    text-align: left;
+    font-size: 20px;
+    color: #edc787;
+    border-radius: 5px;
+  }
+
+  .textbook {
+    float: right;
+  }
+}

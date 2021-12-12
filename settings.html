@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <title>Settings - Job Matcher</title>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="homebutton"><a href="./home.html">Job Matcher</a></div>
+      <div class="nav">
+        <ul>
+          <li><a href="./contactus.html">Contact Us</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a class="tab-active" href="./settings.html">Settings</a></li>
+          <li><a href="./chat.html">Chats</a></li>
+          <li><a href="./notification.html">Notification</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- <h1 class="pagetitle">Settings</h1> -->
+    <!--content start-->
+    <div class="content">
+      <!--notification setting start-->
+      <!-- <h3>Notification</h3> -->
+      <label for="chat">Messages notification </label>
+      <label class="switch">
+        <input type="checkbox" id="chat" name="chat" />
+        <span class="slider"></span> </label
+      ><br /><br />
+      <label for="match">New Match notification </label>
+      <label class="switch">
+        <input type="checkbox" id="match" name="match" />
+        <span class="slider"></span> </label
+      ><br /><br />
+      <label for="match">Success Match notification </label>
+      <label class="switch">
+        <input type="checkbox" id="match" name="match" />
+        <span class="slider"></span> </label
+      ><br /><br />
+      <label for="sound">Notification Sound </label>
+      <label class="switch">
+        <input type="checkbox" id="sound" name="sound" />
+        <span class="slider"></span> </label
+      ><br /><br />
+      <!--notification setting end-->
+      <!--account setting start-->
+      <h3>Account</h3>
+      <label for="name">Change Username</label>
+      <input type="textbox" id="username" name="username" />
+      <button class="button">Save</button>
+      <br /><br />
+      <label for="password">Change Password</label>
+      <input type="textbox" id="password" name="password" />
+      <button class="button">Save</button>
+      <br /><br />
+      <button class="button"><a href="./index.html">Sign Out</a></button
+      ><br /><br />
+      <!--account setting end-->
+    </div>
+    <footer><p>© Job Matcher Co. 2021</p></footer>
+    <!--content end-->
+  </body>
+</html>
