@@ -6,25 +6,81 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="./src/styles.css">
+    <style>
+      html{
+        margin: 0;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box{
+        background-color: #314455;
+        
+        padding: 5% 10%;
+        border-radius: 2%;
+        height: 100%;
+        width: auto;
+      }
+      .row{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container, .row a, .row button{
+        margin: 0;
+        font-size: 100%;
+      }
+
+      .row a, .row button{
+        margin: 0;
+      }
+      .row a{
+        margin: 0 10%;
+        
+      }
+
+      .container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    
+        width: 50%;
+        height: auto;
+        background-color:transparent;
+
+        position: relative;
+        transform: translate(0, -10%);
+      }
+      .row{
+        width: 100%;
+        transform: translate(10%, 0);
+      }
+
+    </style>
   </head>
   <body>
     <!-- Ketik code Anda dibawah -->
-    <header">
+    <div class="container">
       <div class="judul">
         <h1>Job Matcher</h1>
-        <p>Helps You Connect</p>
       </div>
-    </header>
-      <div class="container">
-          <!--<form action="/action_page.php">-->
-            <!--something here...-->
-            <h1>Register As:</h1>
-            <div class="reg-opt">
-              <a href="./company-reg.html"> <button class="button"><h3>Company</h3></button></a>
-              <a href="./worker-reg.html"><button class="button"><h3>Employee/Worker</h3></button><a>
-            </div>
-          <!--</form>-->
-      </div>
+        <div class="box dark">
+            <!--<form action="/action_page.php">-->
+              <!--something here...-->
+              
+              <h1 style="margin-top: 0;">Register As:</h1>
+              <div class="row">
+                <a href="./company-reg.html"> <button class="button"><h3>Company</h3></button></a>
+                <a href="./worker-reg.html"><button class="button"><h3>Employee</h3></button><a>
+              </div>
+            <!--</form>-->
+        </div>
+    </div>
     <footer><p>© Job Matcher Co. 2021</P></footer>
   </body>
 </html>

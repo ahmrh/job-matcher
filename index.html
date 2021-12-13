@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="./src/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
     <style>
       html{
         margin: 0;
@@ -16,108 +17,132 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 90vh;
-        padding
+        height: 100vh;
       }
 
       .container{
+        display: flex; 
+        justify-content: center; 
+        align-items:start;
+    
+        width: 100%;
+        height: auto;
+        background-color:transparent;
+        
+        position: relative;
+        transform: translate(0, -10%);
+      }
+      .box{
         display: flex;
+        flex-direction: column;
+        justify-content:center;
         align-items: center;
-        position:relative;
-        height : 40vh;
-        margin : 0;
-        padding: 0;
-      }
 
+        background-color: #314455;
+        padding: 10px 50px;
+        border-radius: 5%;
+        width: auto;
+        height: auto;
+
+
+      }
       .judul{
-        text-align : left;
-        width: .conta;
-      }
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
 
-      .judul h1, .judul p{
-        margin : 0;
-      }
+        margin: 0% 5%;
 
-      @media screen and (max-height: 600px) {
-        /* styles */
-        html {
-          /*border: 10px solid rgba(91, 91, 91, 1);*/
-        }
+      }
       
+      .judul h1, .judul p{
+        margin: 5% 0;
+        width: auto;
+        height: auto;
+      }
+
+      input[type=button], input[type=text], input[type=password]{
+        padding: 1% 2%;
+        margin: 4% 0;
+        border: 10% solid #ccc;
+        box-sizing: border-box;
+        font-size: 80%;
+
+        width: 100%;
+        height: 100%;
+
+      }
+      #lupa{
+        margin: 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: end;
+        font-size: 70%;
+      }
+
+      .row #title{
+        display: flex;
+
+      }
+      .row{
+        margin: 
+      }
+      form{
+        margin: 10% 0 0 0;
+      }
+      form p{
+        font-size: 80%;
+      }
+
+      
+      @media screen and (max-width: 1000px) {
+        body{
+        }
         .container{
-          display: flex;
           flex-direction: column;
+          align-items: center;
           justify-content: center;
           
-          height : auto;
+          font-size: 90%;
           
         }
-        .box, .judul{
-          margin-top: 25px;
-          justify-self: center;
-          text-align: center;
-
-          position: relative;
-          left: 50%;
-          transform: translate(-50%);
+        .judul{
+          margin: 0 0 2% 0;
+          font-size: 120%;
+          align-items: center;
         }
       }
-      
 
     </style>
   </head>
   <body>
+    
     <!-- Ketik code Anda dibawah -->
-    <div class="container" 
-    style=
-    "display: flex; 
-    justify-content: center; 
-    align-items:start;
-
-    width: 100vh;
-    height: auto;
-    background-color:transparent;
-
-    "
-    >
-      <div class="judul"
-      style=
-      "
-      margin-top : 25px;
-      display: flex;
-      flex-direction: column;
-      width: 50vh;"> 
+    <div class="container">
+      <div class="judul"> 
         <h1>Job Matcher</h1>
         <p>Helps You Connect</p>
       </div>
-    
-        
-      <div class="box"
-      style=
-      "display: flex;
-      justify-content:center;
-      background-color: #314455;
-      padding: 4vh;
-      border-radius: 10px;
-      font-family: Roboto;
-      ">
-          <form action="/action_page.php">
-
+      <div class="box">
+          <form action="./home.html" method="post"
+          style="font-family: Roboto; height:">
             <div class="row">
-              <label for="name" style="" >E-Mail/Username</label>
-              <input type="text" class="textbox" id="name" name="email" placeholder="e-mail/username"><br>
+              <input type="text" id="name" name="email" placeholder="e-mail/username"><br>
             </div>
             
-            <div class="row" style="margin-top:1vh;">
-              <label for="password" style="">Password</label><br>
-              <input type="text" class="textbox" id="password" name="password" placeholder="password"><br><br>
+            <div class="row">
+              <input type="password" id="password" name="password" placeholder="password"><br>
+              <p id="lupa"><a href="./lupagan">forgot password?</a></p>
             </div>
 
-            <a href="./home.html">
-              <button type="button" class="signinbutton">Sign In</button>
-            </a>
+            <div class="row">
+              <a href="./home.html">
+              <input type="button" class="block-button" style=" font-weight:bold;"value="Sign In">
+              </a>
+            </div>
+            
             <p>Don't have an account? <br> Sign up <a href="./register.html">here</a></p>
-            <p>Job Matcher 2021</p>
           </form>
       </div>
           
