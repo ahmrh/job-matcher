@@ -51,6 +51,10 @@ header {
 .nav{
   font-family: Roboto;
   font-size: 120%;
+  width: auto;
+}
+.nav-button{
+  width: auto;
 }
 .nav-button a {
   font-size: 210%;
@@ -64,7 +68,14 @@ header {
 .nav-button a:hover {
   color: #a1a1a1;
 }
-
+.logout{
+  font-family: Roboto;
+  align-self: center;
+  justify-self: end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 .content {
   position: relative;
   top: auto;
@@ -163,7 +174,7 @@ footer p{
 
   }
   header{
-    font-size: 110%;
+    font-size: 100%;
     height: auto;
   }
   .content{
