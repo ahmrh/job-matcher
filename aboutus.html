@@ -5,6 +5,25 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="../src/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+      .box{
+        
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        font-size: 200%;
+        font-family: Roboto;
+
+        padding: 0 2% 4% 2%;
+        margin: 5% 2% 2% 2%;
+
+      }
+      .box ul{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -21,13 +40,16 @@
       </div>
     </header>
     <div class="content">
-      <h2>FAQ</h2>
-      <ul>
-        <li><a>How do I change my password?</a></li>
-        <li><a>What is Job Matcher?</a></li>
-        <li><a>How do i unlock chat?</a></li>
-        <li><a>What happens if i decline a match?</a></li>
-      </ul>
+      <div class="box">
+        <h2>FAQ</h2>
+        <ul>
+          <li><a>How do I change my password?</a></li>
+          <li><a>What is Job Matcher?</a></li>
+          <li><a>How do i unlock chat?</a></li>
+          <li><a>What happens if i decline a match?</a></li>
+        </ul>
+
+      </div>
     </div>
     <footer><p>© Job Matcher Co. 2021</p></footer>
     <!--content end-->

@@ -158,7 +158,6 @@ footer p{
 }
 
 @media screen and (orientation: portrait){
-
   .job-list{
     width: 80%;
 
@@ -178,6 +177,129 @@ footer p{
 
 
 /*                  */
+
+
+/* Notification.html css */
+.notification-list{
+  background: rgba(49, 68, 85);
+  width: 60%;
+  padding: 2%;
+  border-radius: 1%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: roboto;
+}
+.notification {
+  background: rgb(0, 0, 0, 0.2);
+  padding: 3%;
+  margin: 0 0 2% 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.notification-text{
+  margin-left: 20px;
+  color: #edc787;
+  font-size: 150%;
+  width: 70%;
+}
+.notification-image{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1%;
+  border-radius: 10%;
+}
+@media screen and (orientation: portrait){
+  .notification-list{
+    width: 80%;
+    font-size: 100%;
+
+  }
+  .notification{
+  }
+}
+
+/*                  */
+
+/* Chats.html css */
+.chat-list{
+  background: rgba(49, 68, 85);
+  width: 70%;
+  padding: 2%;
+  border-radius: 1%;
+
+  font-family: roboto;
+}
+.chat {
+  margin: 0 0 2% 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-text{
+  margin-left: 20px;
+  color: #edc787;
+  font-size: 150%;
+  width: 100%;
+}
+.chat-profil {
+  display: flex;
+  width: 25%;
+  height: 100%;
+
+}
+.chat-profil img{
+  background: rgba(255, 255, 255, 0.1);
+  margin: 6px 3px;
+  padding: 1%;
+  border-radius: 10%;
+}
+
+.chat-profil p{
+  justify-self: end;
+  width: auto;
+  height: 100%;
+  margin: 7% 0 0 10%;
+  font-size: 150%;
+  font-weight: bold;
+}
+@media screen and (orientation: portrait){
+  .chat-list{
+    width: 70%;
+    font-size: 100%;
+  }
+  .chat{
+  }
+}
+
+/*                */
+
+/* Settings.html css */
+.settings-box{
+  background: rgba(49, 68, 85);
+  width: 50%;
+  padding: 2%;
+  border-radius: 1%;
+
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (orientation: portrait){
+  .settings-box{
+    width: 70%;
+    font-size: 100%;
+  }
+}
+
 .tes {
   background-color: #314455;
   width: 100%;
@@ -322,7 +444,6 @@ input:checked + .slider:before {
   background-color: #a1a1a1;
 }
 
-.notification-text,
 chat-text {
   margin-left: 20px;
   color: #edc787;
@@ -336,10 +457,6 @@ chat-text {
   margin-top: 6px;
 }
 
-.chat-profil {
-  float: left;
-  margin: 6px 3px;
-}
 
 .tab-active {
   background-color: #edc787;

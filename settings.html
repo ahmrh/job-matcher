@@ -5,6 +5,53 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="./src/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+      
+      .settings, .account{
+        width: 80%;
+      }
+      .row{
+        width: 100%;
+        height: 120%;
+        font-size: 180%;
+        margin: 5% 0;
+        
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .account{
+        font-size: 100%;
+      }
+      .account #title{
+        font-size: 250%;
+      }
+      .account input{
+        width: 50%;
+      }
+      .account button{
+        padding: 2%;
+        font-weight: bold;
+      }
+      
+      @media screen and (orientation: portrait) {
+        .settings-box{
+          font-size: 80%;
+        }
+        .account input{
+          width: 40%;
+        }
+      } 
+      @media screen and (max-width: 1200px) {
+        .settings-box{
+          font-size: 80%;
+        }
+        .account input{
+          width: 40%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -20,47 +67,56 @@
         </ul>
       </div>
     </header>
-    <!-- <h1 class="pagetitle">Settings</h1> -->
-    <!--content start-->
+
     <div class="content">
-      <!--notification setting start-->
-      <!-- <h3>Notification</h3> -->
-      <label for="chat">Messages notification </label>
-      <label class="switch">
-        <input type="checkbox" id="chat" name="chat" />
-        <span class="slider"></span> </label
-      ><br /><br />
-      <label for="match">New Match notification </label>
-      <label class="switch">
-        <input type="checkbox" id="match" name="match" />
-        <span class="slider"></span> </label
-      ><br /><br />
-      <label for="match">Success Match notification </label>
-      <label class="switch">
-        <input type="checkbox" id="match" name="match" />
-        <span class="slider"></span> </label
-      ><br /><br />
-      <label for="sound">Notification Sound </label>
-      <label class="switch">
-        <input type="checkbox" id="sound" name="sound" />
-        <span class="slider"></span> </label
-      ><br /><br />
-      <!--notification setting end-->
-      <!--account setting start-->
-      <h3>Account</h3>
-      <label for="name">Change Username</label>
-      <input type="textbox" id="username" name="username" />
-      <button class="button">Save</button>
-      <br /><br />
-      <label for="password">Change Password</label>
-      <input type="textbox" id="password" name="password" />
-      <button class="button">Save</button>
-      <br /><br />
-      <button class="button"><a href="./index.html">Sign Out</a></button
-      ><br /><br />
-      <!--account setting end-->
+      <div class="settings-box shadow">
+        <div class="settings">
+          <div class="row">
+            <label for="chat">Messages notification </label>
+            <label class="switch">
+              <input type="checkbox" id="chat" name="chat" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="row">
+            <label for="match">New Match notification </label>
+            <label class="switch">
+              <input type="checkbox" id="match" name="match" />
+              <span class="slider"></span> </label>
+          </div>
+          <div class="row">
+            <label for="match">Success Match notification </label>
+            <label class="switch">
+              <input type="checkbox" id="match" name="match" />
+              <span class="slider"></span> </label>
+          </div>
+          <div class="row">
+            <label for="sound">Notification Sound </label>
+            <label class="switch">
+              <input type="checkbox" id="sound" name="sound" />
+              <span class="slider"></span> </label>
+          </div>
+
+        </div>
+        
+        <div class="account">
+          <h3 id="title">Account</h3>
+          <div class="row">
+            <label for="name">Change Username</label>
+            <input type="textbox" id="username" name="username" />
+            <button class="button">Save</button>
+          </div>
+
+          <div class="row">
+            <label for="password">Change Password</label>
+            <input type="textbox" id="password" name="password" />
+            <button class="button">Save</button>
+          </div> 
+        </div> 
+        <!-- <button class="button"><a href="./index.html">Sign Out</a></button> -->
+
+      </div>
     </div>
     <footer><p>© Job Matcher Co. 2021</p></footer>
-    <!--content end-->
   </body>
 </html>
