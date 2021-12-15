@@ -4,11 +4,13 @@
 
   <head>
     <meta charset="utf-8" />
+    <link href="./src/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title></title>
-    <link rel="stylesheet" href="./src/styles.css">
     <style>
       html{
         margin: 0;
+        text-align: center;
       }
       body{
         display: flex;
@@ -18,30 +20,31 @@
         height: 100vh;
       }
       .box{
-        background-color: #314455;
-        
-        padding: 5% 10%;
-        border-radius: 2%;
-        height: 100%;
+        padding: 10% 15%; 
         width: auto;
+        font-family: Roboto;
       }
       .row{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        
+        width: 400px;
+        height: 100px;
+        font-size: 150%;
+        padding: 20px 0;
+        
       }
       .container, .row a, .row button{
         margin: 0;
         font-size: 100%;
       }
 
-      .row a, .row button{
-        margin: 0;
+      .row button{
+        width: 150%;
       }
-      .row a{
-        margin: 0 10%;
-        
-      }
+
 
       .container{
         display: flex; 
@@ -49,16 +52,48 @@
         justify-content: center; 
         align-items: center;
     
-        width: 50%;
+        width: auto;
         height: auto;
         background-color:transparent;
 
         position: relative;
         transform: translate(0, -10%);
       }
-      .row{
-        width: 100%;
-        transform: translate(10%, 0);
+
+      @media screen and (orientation: portrait) {
+        .container{
+          height: 100vh;
+          width: 100vw;
+        }
+        .box{
+          padding: 5% 10%;
+          width: 40%;
+          height: auto;
+          
+        }
+        .box h1{
+          font-size: 400%;
+        }
+        .row{
+          width: 100%;
+        }
+        .row button{
+          padding: 3% 6%;
+          margin: 4% 0;
+          border: 10% solid #ccc;
+          box-sizing: border-box;
+          
+          font-size: 100%;
+          width: 50%;
+          height: 80%;
+        }
+        .row button a{
+          font-size: 100%;
+        }
+        .judul{
+          font-size: 300%;
+        }
+
       }
 
     </style>
@@ -72,11 +107,10 @@
         <div class="box dark">
             <!--<form action="/action_page.php">-->
               <!--something here...-->
-              
-              <h1 style="margin-top: 0;">Register As:</h1>
+              <h1>Register as:</h1>
               <div class="row">
-                <a href="./company-reg.html"> <button class="button"><h3>Company</h3></button></a>
-                <a href="./worker-reg.html"><button class="button"><h3>Employee</h3></button><a>
+                <button class="button" style="margin-right: 4%;"><a href="./company-reg.html"><h3>Company</h3></a></button>
+                <button class="button" style="margin-left: 4%;"><a href="./worker-reg.html"><h3>Job Seeker</h3></a></button>
               </div>
             <!--</form>-->
         </div>

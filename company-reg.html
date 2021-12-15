@@ -2,29 +2,127 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Register - Job Matcher</title>
+    <title>Registration - Job Matcher</title>
     <link rel="stylesheet" href="./src/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .box{
+        padding:1% 4%;
+        width: 30%;
+        height: 90%;
+        border-radius: 2%;
+        font-family: Roboto;
+      }
+      .row{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 1% 0;
+        padding: 0% 5%;
+
+      }
+      .row a{
+        width: 100%;
+        height: 80%;
+        font-size: 150%;
+        font-weight: bold;
+      }
+      .row input{
+      }
+      label{
+        align-self: start;
+        font-size: 70%;
+      }
+      .box form h1{
+        font-size: 100%;
+        text-align: center;
+      }
+
+      input[type=button], input[type=text], input[type=password]{
+        padding: 2% 3%;
+        margin: 1% 0;
+        border: 10% solid #ccc;
+        box-sizing: border-box;
+
+        width: 100%;
+        height: 100%;
+        font-size: 50%;
+      }
+
+      form{
+        background: rgba(0, 0, 0, 0.1);
+        
+        width: 100%;
+        border-radius: 2%;
+
+        font-size: 140%;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      @media screen and (orientation: portrait) {
+        .container{
+          font-size: 200%;
+        }
+        .box{
+          width: 60%;
+        }
+
+      }
+
+    </style>
   </head>
   <body>
-    <header">
-      <div class="judul">
-        <h1>Company Registration</h1>
-      </div>
-    </header>
     <div class="container">
+      <div class="box">
         <form action="/action_page.php">
-          <label for="name">E-Mail/Username</label>
-            <input type="text" class="textbox" id="name" name="email"><br><br>
-            <label for="password">Password</label><br>
-            <input type="text" class="textbox" id="password" name="password"><br><br>
-          <label for="name">Company Name</label>
-          <input type="text" class="textbox"><br><br>
-          <label for="password">Address</label><br>
-          <input type="text" class="textbox"><br><br>
-          <a href="./home.html">
-            <button type="button" class="signinbutton">Register</button>
-          </a>
+          <h1>Company Registration</h1>
+          <div class="row">
+            <label for="">Company Name</label>
+            <input type="text" class="" placeholder="your company's name">
+          </div>
+          <div class="row">
+            <label for="">Street Address</label>
+            <input type="text" class="" placeholder="your company's street address">
+          </div>
+          <div class="row">
+            <label for="">Postal Code</label>
+            <input type="text" class="" placeholder="your company's postal code">
+          </div>
+          <div class="row">
+            <label for="">City/District</label>
+            <input type="text" class="" placeholder="your company's city or district">
+          </div>
+          <div class="row">
+            <label for="">Province</label>
+            <input type="text" class="" placeholder="your company's province">
+
+          </div>
+          <div class="row">
+            <label for="">Country/Region</label>
+            <input type="text" class="" placeholder="your company's country or region">
+
+          </div>
+
+
+
+          <div class="row">
+            <a href="./account-create.html">
+              <input type="button" class="block-button" value="Submit">
+            </a>
+          </div>
         </form>
+      </div>
+
     </div>
 
     <footer><p>© Job Matcher Co. 2021</p></footer>
