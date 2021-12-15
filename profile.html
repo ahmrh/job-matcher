@@ -5,10 +5,63 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="./src/styles.css" />
+    <style>
+      .content{
+        padding: 5% 0;
+      }
+      input[type=button], input[type=text], input[type=password]{
+        padding: 2% 3%;
+        margin: 1% 0;
+        border: 10% solid #ccc;
+        box-sizing: border-box;
+
+        width: 100%;
+        height: 100%;
+        font-size: 80%;
+      }
+      .box{
+        width: 60%;
+        height: 200%;
+        padding: 2% 0 3% 0;
+      
+      }
+      form{
+        width: 80%;
+        font-size: 150%;
+      }
+      .row{
+        width: 100%;
+      }
+      .row label{
+        align-self: start;
+      }
+
+      #profile-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+      }
+      @media screen and (orientation: portrait){
+
+        .box{
+          width: 80%;
+      
+        }
+        header{
+          font-size: 110%;
+          height: auto;
+        }
+        .content{
+          font-size: 120%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="homebutton"><a href="./home.html">Job Matcher</a></div>
+      <div class="nav-button"><a href="./home.html">Job Matcher</a></div>
       <div class="nav">
         <ul>
           <li><a href="./contactus.html">Contact Us</a></li>
@@ -22,28 +75,45 @@
     </header>
     <!--<h1 class="pagetitle">My Profile</h1>-->
     <div class="content">
-      <img
-        src="./src/profile-picture.png"
-        style="width: 100px; height: 100px;"
-      />
-      <button class="button">Edit Picture</button>
-      <p>First Name</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Last Name</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Email</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Address</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Experience</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Education</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Skills</p>
-      <input type="text" class="textbox" /><br /><br />
-      <p>Languages</p>
-      <input type="text" class="textbox" /><br /><br />
-      <button class="button">Save Changes</button>
+      <div class="box">
+        <form action="">
+        <div class="row" id="profile-image">
+          <img
+            src="./src/profile-picture.png"
+            style="width: 100px; height: 100px;"
+          />
+          <button type="button" class="button" style="border-radius: 5%;" value="">Edit Picture</button>
+
+        </div>
+
+        <div class="row">
+          <label for="">Full Name</label>
+          <input type="text" class="textbox" /><br /><br />
+        </div>
+
+        <div class="row">
+          <label for="">Country/Region</label>
+          <input type="text" class="textbox" /><br /><br />
+        </div>
+
+        <div class="row">
+          <label for="">Education</label>
+          <input type="text" class="textbox" /><br /><br />
+        </div>
+
+        <div class="row">
+          <label for="">Email</label>
+          <input type="text" class="textbox" /><br /><br />
+        </div>
+        
+        <div class="row">
+          <input type="button" class="block-button" value="Save Changes">
+        </div>
+
+        </form>
+        
+      </div>
+
     </div>
     <footer><p>© Job Matcher Co. 2021</p></footer>
   </body>
